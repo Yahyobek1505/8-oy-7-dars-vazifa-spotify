@@ -18,7 +18,8 @@ const TopMix = () => {
     })
     .then(res => res.json())
     .then(data =>{
-      console.log(21, data);
+      
+      console.log(22, data);
       setTopMix(data.playlists.items)
     })
     .catch(error =>{
