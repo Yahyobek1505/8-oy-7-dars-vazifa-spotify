@@ -7,7 +7,6 @@ const TopMix = () => {
   const [topMix, setTopMix] = useState([])
   const dispatch = useDispatch();
   const token = useSelector(state => state.auth.token)
-
   useEffect(() =>{
   if (token) {
     fetch(`${import.meta.env.VITE_API_TOP_MIX}browse/categories/toplists/playlists`, {
@@ -18,9 +17,6 @@ const TopMix = () => {
 
     })
     .then(res => res.json())
- HEAD
-    .then((data) =>{
-
     .then(data =>{
       setTopMix(data.playlists.items)
     })
