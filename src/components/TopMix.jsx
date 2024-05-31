@@ -7,6 +7,7 @@ const TopMix = () => {
   const [topMix, setTopMix] = useState([])
   const dispatch = useDispatch();
   const token = useSelector(state => state.auth.token)
+
   useEffect(() =>{
   if (token) {
     fetch(`${import.meta.env.VITE_API_TOP_MIX}browse/categories/toplists/playlists`, {
@@ -17,8 +18,8 @@ const TopMix = () => {
 
     })
     .then(res => res.json())
-    .then(data =>{
-      console.log(21, data);
+    .then((data) =>{
+
       setTopMix(data.playlists.items)
     })
     .catch(error =>{
@@ -33,7 +34,7 @@ dispatch(create(res))
   console.log(error);
 })
   }
-  }, [])
+  }, [token])
   return (
     <div className='w-[94%]  mx-auto'>
     <div className='flex justify-between w-full my-4'>
