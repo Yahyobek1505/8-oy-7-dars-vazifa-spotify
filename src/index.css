@@ -5,3 +5,10 @@
 body {
   font-family: sans-serif;
 }
+
+.linerDiv{
+  background: linear-gradient(180deg, rgba(51,51,159,1) 0%, rgba(18,18,18,1) 100%);
+}
+.infoMusic{
+  background: linear-gradient(180deg, rgba(191,212,36,1) 0%, rgba(29,30,19,1) 100%)
+}

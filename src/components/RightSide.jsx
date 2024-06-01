@@ -6,7 +6,7 @@ import Sceleton from "../assets/sceleton.svg";
 
 const RightSide = () => {
   return (
-    <div className="bg-black min-h-[100vh] w-[20%] px-5 pt-8 text-lg">
+    <div className="bg-black min-h-[100vh] w-[17%] px-5 pt-8 text-lg">
       <div className="activity flex justify-between mb-10 cursor-pointer">
         <h2 className="text-[#ccc]">Friend Activity</h2>
         <div className="add-user flex gap-2">
@@ -28,7 +28,7 @@ const RightSide = () => {
         <img src={Sceleton} alt="" />
       </div>
       <p className="text-[#ccc]">Go to Settings  Social and enable “Share my listening activity on Spotify.’ You can turn this off at any time.</p>
-      <button className="uppercase bg-white text-black py-5 px-16 text-lg mt-6 rounded-full font-semibold">Settings</button>
+      <button className="uppercase bg-white text-black py-5 px-14 text-lg mt-6 w-full text-center rounded-full font-semibold">Settings</button>
     </div>
   );
 };

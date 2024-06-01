@@ -8,7 +8,7 @@ import Liked from "../assets/Liked Songs.svg";
 const LeftSide = () => {
   
   return (
-    <div className="bg-black min-h-[100vh] w-[20%] pt-[42px] px-[35px]">
+    <div className="bg-black min-h-[100vh] w-[17%] pt-[42px] px-[35px]">
       <div className="menu flex flex-col gap-4">
         <div className="home flex gap-4 items-center cursor-pointer">
           <img src={Home} alt="Home" />

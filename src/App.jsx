@@ -21,13 +21,13 @@ dispatch(create(res))
 })
   },[])
   return (
-    <>
+    <div className="max-w-[1440px] mx-auto" >
     <Routes>
       <Route path="/" element = {<Layouts><Home></Home></Layouts>}></Route>
       <Route path="/likes" element = {<Layouts><Likes></Likes></Layouts>}></Route>
       <Route path="/playlist/:id" element = {<Layouts><Musics></Musics></Layouts>}></Route>
     </Routes>
-    </>
+    </div>
   );
 }
 
